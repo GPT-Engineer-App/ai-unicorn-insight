@@ -57,9 +57,21 @@ const Index = () => {
               Typical CAC values for AI Unicorns range from $20 to $100 per customer.
             </Text>
             <Input placeholder="Monthly Recurring Revenue (MRR)" mt={4} />
+            <Text fontSize="sm" color="gray.400" mt={2}>
+              Typical MRR for AI Unicorns ranges from $1M to $10M per month.
+            </Text>
             <Input placeholder="Market Size" mt={4} />
+            <Text fontSize="sm" color="gray.400" mt={2}>
+              AI Unicorns often target markets with a size of at least $1 billion.
+            </Text>
             <Input placeholder="Technology Innovation Level" mt={4} />
+            <Text fontSize="sm" color="gray.400" mt={2}>
+              High innovation levels in AI technology are crucial, often leading to significant competitive advantages.
+            </Text>
             <Input placeholder="Team Expertise" mt={4} />
+            <Text fontSize="sm" color="gray.400" mt={2}>
+              Team expertise in AI and related fields is typically high, with key members often holding advanced degrees and significant industry experience.
+            </Text>
             <Button leftIcon={<FaCalculator />} colorScheme="teal" mt={4} onClick={handleCalculatePotential}>
               Evaluate Unicorn Potential
             </Button>
