@@ -26,12 +26,14 @@ const Index = () => {
 
   return (
     <Container maxW="container.xl" py={10}>
-      <VStack spacing={8}>
+      <VStack spacing={8} bg="black">
         <Heading as="h1" size="2xl">
-          AI Unicorns Newsletter
+          AI Unicorns
         </Heading>
-        <Text fontSize="xl">Discover the potential of AI startups and learn from the success stories of AI unicorns.</Text>
-        <Image src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxBSSUyMHVuaWNvcm4lMjBzdGFydHVwc3xlbnwwfHx8fDE3MTQxMDgxMzJ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="AI Unicorn Startups" />
+        <Text fontSize="xl" color="white">
+          Discover the potential of AI startups and learn from the success stories of AI unicorns.
+        </Text>
+        <Image src="https://example.com/new-unicorn-image.jpg" alt="AI Unicorn" />
 
         <Flex w="full" justify="space-between" align="center">
           <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
@@ -44,12 +46,19 @@ const Index = () => {
           </Box>
 
           <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md" ml={10}>
-            <Heading fontSize="xl">AI Unicorn Potential Calculator</Heading>
-            <Text mt={4}>Enter your startup's metrics to see if you could be the next AI Unicorn.</Text>
+            <Heading fontSize="xl" color="white">
+              AI Unicorn Potential Calculator
+            </Heading>
+            <Text mt={4} color="white">
+              Enter your startup's metrics to see if you could be the next AI Unicorn. Include factors like market size, technology innovation, and team expertise.
+            </Text>
             <Input placeholder="Customer Acquisition Cost (CAC)" mt={4} />
             <Input placeholder="Monthly Recurring Revenue (MRR)" mt={4} />
+            <Input placeholder="Market Size" mt={4} />
+            <Input placeholder="Technology Innovation Level" mt={4} />
+            <Input placeholder="Team Expertise" mt={4} />
             <Button leftIcon={<FaCalculator />} colorScheme="teal" mt={4} onClick={handleCalculatePotential}>
-              Calculate Potential
+              Evaluate Unicorn Potential
             </Button>
           </Box>
         </Flex>
