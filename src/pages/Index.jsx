@@ -26,14 +26,14 @@ const Index = () => {
 
   return (
     <Container maxW="container.xl" py={10}>
-      <VStack spacing={8} bg="black">
-        <Heading as="h1" size="2xl">
+      <VStack spacing={8} bg="black" color="white">
+        <Heading as="h1" size="2xl" color="white">
           AI Unicorns
         </Heading>
         <Text fontSize="xl" color="white">
           Discover the potential of AI startups and learn from the success stories of AI unicorns.
         </Text>
-        <Image src="https://example.com/new-unicorn-image.jpg" alt="AI Unicorn" />
+        <Image src="https://example.com/new-unicorn-image.jpg" alt="AI Unicorn" boxSize="200px" />
 
         <Flex w="full" justify="space-between" align="center">
           <Box p={5} shadow="md" borderWidth="1px" flex="1" borderRadius="md">
@@ -53,6 +53,9 @@ const Index = () => {
               Enter your startup's metrics to see if you could be the next AI Unicorn. Include factors like market size, technology innovation, and team expertise.
             </Text>
             <Input placeholder="Customer Acquisition Cost (CAC)" mt={4} />
+            <Text fontSize="sm" color="gray.400" mt={2}>
+              Typical CAC values for AI Unicorns range from $20 to $100 per customer.
+            </Text>
             <Input placeholder="Monthly Recurring Revenue (MRR)" mt={4} />
             <Input placeholder="Market Size" mt={4} />
             <Input placeholder="Technology Innovation Level" mt={4} />
